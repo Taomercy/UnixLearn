@@ -1,3 +1,4 @@
+/* 列出一个目录中的所有文件 */
 #include "apue.h"
 #include <dirent.h>
 

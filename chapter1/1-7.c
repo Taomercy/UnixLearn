@@ -1,3 +1,4 @@
+/* 从标准输入读命令并执行 */
 #include "apue.h"
 #include <sys/wait.h>
 
@@ -7,7 +8,7 @@ int main()
 	pid_t pid;
 	int status;
 
-	printf("%% ");   /* print prompt */
+	printf(">> ");   /* print prompt */
 	while(fgets(buf, MAXLINE, stdin) != NULL)
 	{
 		if(buf[strlen(buf)-1] == '\n')
@@ -29,7 +30,7 @@ int main()
 		if((pid = waitpid(pid, &status, 0)) < 0)
 			err_sys("waitpid error");
 
-		printf("%% ");
+		printf(">> ");
 	}
 	exit(0);
 }

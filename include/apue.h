@@ -47,6 +47,7 @@ typedef void  Sigfunc(int);  /* for signal handlers */
  */
 
 char * path_alloc(size_t *sizep);   /* 2-16 */
+long open_max(void);                /* 2-17 */
 
 void err_ret(const char *, ...);      /* Appendix B */
 void err_sys(const char *, ...) __attribute__((noreturn));

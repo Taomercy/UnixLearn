@@ -1,4 +1,5 @@
 #!/bin/bash
+#用于编译代码
 compile_file=$1
 #argv1=$2
 #argv2=$3

@@ -1,3 +1,4 @@
+/* 在1-7.c基础上添加 ’Ctrl+c‘ 中断信号处理函数*/
 #include "apue.h"
 #include <sys/wait.h>
 
