@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 gcc 3-2.c ../src/* -I ../include
 ./a.out
 ls -l file.hole

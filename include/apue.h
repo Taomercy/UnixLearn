@@ -10,6 +10,7 @@
 #define _XOPEN_SOURCE 700
 #endif
 
+#define _BSD_SOURCE
 #include <sys/types.h>     /* some systems still require this */
 #include <sys/stat.h>
 #include <sys/termios.h>   /* for winsize */
